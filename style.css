@@ -2,69 +2,87 @@
     font-family: "Montserrat";
     font-weight: normal;
     background: #FFFFFF;
+    margin: 0 0 0 0;
 }
 
-.header__menubar {
-    width: 1337px;
-    height: 51px;
-    right: 60px;
-    top: 24px;
-    bottom: 58px;
-    display: flex;
-}
+@media (min-device-width: 1000px) {
+    .header__menubar {
+      width: 1337px;
+      height: 51px;
+      margin-left: 43px;
+      margin-top: 24px;
+      margin-bottom: 58px;
+      display: flex;
+    }
 
-.header__logo {
+    .header__logo {
     width: 166px;
     height: 51px;
-    right: 258px;
-}
+    margin-right: 258px;
+    }
 
-.header__menu_models {
+    .header__menu_models {
     width: 498px;
-    height: 51px;
-    right: 211px;
-}
+    height: 19px;
+    margin-right: 221px;  
+    padding: 16px 0 16px;
+    display: grid;
+    grid-template-columns: 62px 63px 63px 25px 61px 44px 70px 46px 55px;
+    }
 
-.header__link_models {
+    .header__link_models {
     color: #E51937;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 18px;
-    top: 40px;
-}
+    height: 25px;
+    border-bottom: 2px solid #E51937;
+    border-bottom-left-radius: 5px 2px;
+    border-bottom-right-radius: 5px 2px;
+    white-space: pre;
+    }
 
-.header__link{
+    .header__link{
     color: #000000;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 18px; 
-    top: 40px; 
-}
+    line-height: 18px;
+    white-space: pre;
+    }
 
-.header__menu_main {
-    width: 203px;
-    right: 0;
-}
+    .header__menu_main {
+    width: 179px;
+    height: 19px;
+    padding: 16px 0 16px;
+    display: grid;
+    grid-template-columns: 69px 50px;
+    grid-row: 19px;
+    column-gap: 30px;
+    margin-right: 30px;
+    }
 
-.top-section__title {
+    .header__link_burger {
+    width: 24px;
+    height: 15px;
+    padding: 18px 0 18px;
+    }
+
+    .top-section__title {
     color: #000;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 90px;
-    line-height: 110px;
+    margin: 0 0 -10px 535px;
     width: 370px;
     height: 110px;
-    bottom: 35px;
-    left: 535px;
     white-space: pre;
-}
+    }
 
-.top-section__subtitle {
+    .top-section__subtitle {
     color: #000;
     font-family: "Montserrat";
     font-style: normal;
@@ -72,34 +90,334 @@
     font-size: 15px;
     line-height: 18px;
     bottom: 26px;
-    text-align: center;
-}
+    margin: 0 0 26px 600px;
+    
+    }
 
-.top-section__img_teslalogo {
+    .top-section__img_teslalogo {
     position: absolute;
-    width: 1514px;
-    height: 467px;
-    left: -74px;
+    left: 0px;
     top: 134px;
-}
+    right: 0;
+    }
 
-.top-section__img_car {
-    left: 199px; 
+    .top-section__img_car {
     width: 968px;
     height: 450px;
-    bottom: 26px;
-    right: 273px;
+    margin-bottom: 26px;
+    margin-left: 199px;
+    }
+
+    .top-section__characteristic {
+    width: 798px;
+    display: flex;
+    margin-left: 321px;
+    margin-bottom: 37px;
+    }
  
+    .top-section__img_27 {
+    width: 375px;
+    height: 58px;
+    margin-right: 105px;
+    }
+
+    .top-section__buttons {
+    width: 318px;
+    height: 40px;
+    display: flex;
+    }
+
+    .top-section__link_testdrive {
+    width: 118px;
+    height: 22px;
+    margin-right: 40px;
+    padding: 20px 0 20px;
+    }
+
+    .top-section__img_testdrive-red{
+    display: none;
+    }
+
+    .top-section__orderbtn {
+    width: 160px;
+    height: 40px;
+    background-color: #FFF;
+    border: 2px solid #E51937;
+    margin: 11px 0 7px;
+    }
+
+    .top-section__ordertextbtn {
+    color: #E51937;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+    .top-section__img_strelka {
+    width: 28px;
+    height: 14px;
+    margin-left: 706px;
+    }
 }
 
-.top-section__img_27 {}
+@media (max-device-width: 999px) {
 
-.top-section__link_testdrive{}
+  .header__logo{
+     width: 166px;
+     height: 51px;
+     margin: 0 518px 0 0 ;
+    }
 
-.top-section__img_testdrive{}
+  .header__menubar {
+      width: 720px;
+      height: 51px;
+      margin: 24px 33px 80px 16px;
+    }
 
-.top-section__orderbtn {}
+  .header__menu_models, .header__menu_main, .header__link_models, .header__link {
+     display: none;
+    }
 
-.top-section__ordertextbtn {}
+  .header__link_burger {
+     width: 35px;
+     height: 22px;
+     padding: 14.5px 0 14.5px;
+    }
 
-.top-section__img_strelka {}
+  .top-section__title {
+     color: #000;
+     width: 370px;
+     height: 110px;
+     margin: 0 0 -10px 199px;
+     white-space: pre;
+     font-family: "Montserrat";
+     font-style: normal;
+     font-weight: 600;
+     font-size: 90px;
+    }
+  .top-section__subtitle {
+     color: #000;  
+     width: 241px;
+     height: 19px;
+     white-space: pre;
+     font-family: "Montserrat";
+     font-style: normal;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 18px;
+     margin: 0 0 87px 264px;
+   } 
+
+  .top-section__img_teslalogo {
+     position: absolute;
+     width: 822px;
+     height: 271px;
+     top: 252px;
+     left: -27px;
+   }
+
+  .top-section__img_car {
+     width: 673px;
+     height: 328px;
+     margin: 0 48px 38px 48px;
+  }
+
+  .top-section__characteristic {
+     width: 487px;
+     height: 193px;
+     margin: 0 140.5px 63.5px 140.5px;
+     display: block;
+   }
+
+   .top-section__img_27 {
+     width: 487px;
+     height: 83px;
+     padding: 0 0 55px 0;
+   }
+
+   .top-section__buttons {
+       display: flex;
+       width: 418px;
+       height: 55px;
+       padding-left: 40px;
+   }
+
+  .top-section__link_testdrive {
+      width: 197px;
+      height: 55px;
+      padding: 0;
+      margin: 0;
+  }
+
+  .top-section__img_testdrive-red {
+      display: inline;
+  }
+
+  .top-section__img_testdrive { 
+      display: none;
+   }
+  
+  .top-section__orderbtn {
+     background: #E51937;
+     width: 221px;
+     height: 55px;
+     margin: 0;
+   }
+
+   .top-section__ordertextbtn {
+     font-family: "Montserrat";
+     font-style: normal;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     color: #FFF;
+     align-items: center;
+     text-align: center;
+     text-transform: uppercase;
+     
+   }
+
+   .top-section__img_strelka {
+    width: 28px;
+    height: 14px;
+    margin: 0 0 71px 370px;
+   }
+
+}
+
+@media (max-device-width: 400px) {
+  
+    .header__menubar {
+        width: 352px;
+        height: 42px;
+        margin: 5px 0 30px 2px;
+    }
+
+    .header__logo {
+        width: 138px;
+        height: 42px;
+        margin-right: 190px;
+    }
+
+    .header__menu_models, .header__menu_main, .header__link_models, .header__link {
+        display: none;
+    }
+
+    .header__link_burger {
+        width: 24px;
+        height: 15px;
+        padding: 14px 0 13px;
+    }
+
+    .top-section__title {
+        color: #000;
+        width: 206px;
+        height: 61px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        margin: 0 0 0 85px;
+    }
+
+    .top-section__subtitle {
+        color: #000;
+        width: 161px;
+        height: 13px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        margin: 0 0 49px 108px;
+    }
+
+    .top-section__img_teslalogo {
+        position: absolute;
+        width: 448px;
+        height: 139px;
+        top: 156px;
+    } 
+
+    .top-section__img_car {
+        width: 357px;
+        height: 166px;
+        margin: 0 0 18px 9px; 
+    }
+
+    .top-section__characteristic {
+        width: 303px;
+        height: 136px;
+        margin: 0 0 34px 36px;
+        display: block;
+    }
+
+    .top-section__img_27 {
+        width: 283px;
+        height: 53px;
+        padding: 0 6px 43px;
+    }
+
+    .top-section__buttons{
+        width: 303px;
+        height: 40px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+     }
+
+    .top-section__img_testdrive {
+        display: none;
+    }
+    
+    .top-section__img_testdrive-red {
+        display: inline;
+        width: 143px;
+        height: 40px;
+    }
+
+    .top-section__link_testdrive {
+        width: 143px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .top-section__orderbtn {
+        width: 160px;
+        height: 40px;
+        background: #E51937;
+    }
+    
+    .top-section__ordertextbtn {
+       color: #FFF; 
+       font-family: "Montserrat";
+       font-style: normal;
+       font-weight: bold;
+       font-size: 13px;
+       text-align: center;
+       text-transform: uppercase;
+    }
+
+    .top-section__img_strelka {
+        width: 28px;
+        height: 14px;
+        margin: 0 0 0 175px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
