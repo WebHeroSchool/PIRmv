@@ -421,3 +421,6 @@
 
 }
 
+.future-secton, .safety-section, .future-secton__panelimg, .safety-section__carframe-img, .safety-section__models-logo {
+    width: 200px;
+}
