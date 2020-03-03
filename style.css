@@ -3,31 +3,43 @@
     font-weight: normal;
     background: #FFFFFF;
     margin: 0 0 0 0;
+    max-width: 1440px;
+    min-width: 375px;
+}
+ 
+.future-secton, .safety-section {
+    display: none;
 }
 
 @media (min-device-width: 1000px) {
+
+    .top-section {
+        max-width: 1440px;
+    }
+
     .header__menubar {
-      width: 1337px;
-      height: 51px;
-      margin-left: 43px;
-      margin-top: 24px;
-      margin-bottom: 58px;
+      max-width: 1337px;
+      max-height: 51px;
       display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 58px;
     }
 
     .header__logo {
-    width: 166px;
-    height: 51px;
-    margin-right: 258px;
+    max-width: 166px;
+    max-height: 51px;
     }
 
     .header__menu_models {
-    width: 498px;
-    height: 19px;
-    margin-right: 221px;  
+    max-width: 977px;
+    max-height: 19px;  
     padding: 16px 0 16px;
     display: grid;
-    grid-template-columns: 62px 63px 63px 25px 61px 44px 70px 46px 55px;
+    grid-template-columns: 258px 62px 63px 63px 25px 61px 44px 70px 46px 55px 221px;
     }
 
     .header__link_models {
@@ -51,11 +63,12 @@
     font-size: 15px;
     line-height: 18px;
     white-space: pre;
+
     }
 
     .header__menu_main {
-    width: 179px;
-    height: 19px;
+    max-width: 179px;
+    max-height: 19px;
     padding: 16px 0 16px;
     display: grid;
     grid-template-columns: 69px 50px;
@@ -65,9 +78,9 @@
     }
 
     .header__link_burger {
-    width: 24px;
-    height: 15px;
-    padding: 18px 0 18px;
+    max-width: 24px;
+    max-height: 15px;
+    /*padding: 18px 0 18px;*/
     }
 
     .top-section__title {
@@ -76,10 +89,17 @@
     font-style: normal;
     font-weight: 600;
     font-size: 90px;
-    margin: 0 0 -10px 535px;
-    width: 370px;
-    height: 110px;
+    /*margin: 0 0 -10px 535px;*/
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: -10px;
+    max-width: 370px;
+    max-height: 110px;
     white-space: pre;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
     }
 
     .top-section__subtitle {
@@ -90,28 +110,40 @@
     font-size: 15px;
     line-height: 18px;
     bottom: 26px;
-    margin: 0 0 26px 600px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+    text-align: center;
     
     }
 
     .top-section__img_teslalogo {
     position: absolute;
-    left: 0px;
+    left: auto;
     top: 134px;
-    right: 0;
+    right: auto;
+    }
+
+    .top-section__car {
+    text-align: center; 
+    margin-bottom: 26px; 
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .top-section__img_car {
-    width: 968px;
-    height: 450px;
-    margin-bottom: 26px;
-    margin-left: 199px;
+    max-width: 968px;
+    max-height: 450px; 
     }
 
     .top-section__characteristic {
-    width: 798px;
+    max-width: 798px;
     display: flex;
-    margin-left: 321px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 37px;
     }
  
@@ -128,8 +160,8 @@
     }
 
     .top-section__link_testdrive {
-    width: 118px;
-    height: 22px;
+    max-width: 118px;
+    max-height: 22px;
     margin-right: 40px;
     padding: 20px 0 20px;
     }
@@ -143,7 +175,7 @@
     height: 40px;
     background-color: #FFF;
     border: 2px solid #E51937;
-    margin: 11px 0 7px;
+    margin: 11px 0 7px 0;
     }
 
     .top-section__ordertextbtn {
@@ -158,13 +190,18 @@
     }
 
     .top-section__img_strelka {
-    width: 28px;
-    height: 14px;
-    margin-left: 706px;
+    max-width: 28px;
+    max-height: 14px;
+    margin: auto;
     }
 }
 
 @media (max-device-width: 999px) {
+
+    .top-section {
+        max-width: 800px;
+        margin: 0;
+    }
 
   .header__logo{
      width: 166px;
@@ -291,6 +328,10 @@
 
 @media (max-device-width: 400px) {
   
+    .top-section {
+        max-width: 375px;
+    }
+
     .header__menubar {
         width: 352px;
         height: 42px;
@@ -419,8 +460,4 @@
 
 
 
-}
-
-.future-secton, .safety-section, .future-secton__panelimg, .safety-section__carframe-img, .safety-section__models-logo {
-    width: 200px;
 }
