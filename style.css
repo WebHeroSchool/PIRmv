@@ -1,18 +1,18 @@
-.body {
-    font-family: "Montserrat";
-    font-weight: normal;
-    background: #FFFFFF;
-    margin: 0 auto;
-    max-width: 1440px;
-    min-width: 375px;
-}
- 
+
 .future-secton, .safety-section {
     display: none;
 }
 
-@media (min-device-width: 1000px) {
+@media (min-device-width: 1030px) {
 
+    .body {
+        font-family: "Montserrat";
+        font-weight: normal;
+        background: #FFFFFF;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    
     .top-section {
      max-width: 1440px;
      margin: 0;
@@ -70,7 +70,6 @@
     .header__menu_main {
     max-width: 149px;
     max-height: 19px;
-    /*padding: 16px 0 16px;*/
     display: grid;
     grid-template-columns: 69px 50px;
     grid-row: 19px;
@@ -120,23 +119,26 @@
 
     .top-section__img_teslalogo {
     position: absolute;
+    max-width: 1440px;
     left: auto;
-    top: 105px;
+    top: 108px;
     right: auto;
+    padding-left: 5px;
     }
 
     .top-section__img_car {
     max-width: 968px;
     max-height: 450px; 
+    padding-right: 60px;
     margin-bottom: 26px; 
     margin-left: auto;
     margin-right: auto;
-   /* text-align: center;*/
+    text-align: center;
     display: flex;
     }
 
     .top-section__characteristic {
-    max-width: 798px;
+    max-width: 800px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,15 +146,19 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 37px;
+    padding-left: 14px;
     }
  
     .top-section__img_27 {
-    width: 373px;
-    height: 60px;
+    width: 372px;
+    height: 65px;
     }
 
+    .top-section__img_27-mini, .top-section__img_27-mob, .top-section__img_632-mob {
+        display: none;
+    }
     .top-section__buttons {
-    width: 318px;
+    width: 320px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -162,7 +168,6 @@
     .top-section__link_testdrive {
     max-width: 118px;
     max-height: 22px;
-    padding: 20px 0 20px;
     }
 
     .top-section__img_testdrive-red{
@@ -197,23 +202,35 @@
     }
 }
 
-@media (max-device-width: 999px) {
+@media (max-device-width: 1024px) {
+
+    .body {
+        font-family: "Montserrat";
+        font-weight: normal;
+        background: #FFFFFF;
+        margin: 0 auto;
+    }
+     
 
     .top-section {
         max-width: 800px;
-        margin: 0;
+        margin: 0 auto;
     }
 
-  .header__logo{
-     width: 166px;
-     height: 51px;
-     margin: 0 518px 0 0 ;
-    }
-
-  .header__menubar {
+   .header__menubar {
       width: 720px;
       height: 51px;
-      margin: 24px 33px 80px 16px;
+      margin-top: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+ .header__logo{
+     width: 166px;
+     height: 51px;
     }
 
   .header__menu_models, .header__menu_main, .header__link_models, .header__link {
@@ -226,17 +243,29 @@
      padding: 14.5px 0 14.5px;
     }
 
+   .burger_icon {
+    width: 35px;
+    height: 22px; 
+    padding: 0; 
+   }
+
   .top-section__title {
      color: #000;
      width: 370px;
      height: 110px;
-     margin: 0 0 -10px 199px;
+     text-align: center;
+     margin-top: 0;
+     margin-right: auto;
+     margin-bottom: -10px;
+     margin-left: auto;
      white-space: pre;
      font-family: "Montserrat";
      font-style: normal;
      font-weight: 600;
      font-size: 90px;
+     padding-right: 30px;
     }
+
   .top-section__subtitle {
      color: #000;  
      width: 241px;
@@ -247,34 +276,51 @@
      font-weight: 500;
      font-size: 15px;
      line-height: 18px;
-     margin: 0 0 87px 264px;
+     text-align: center;
+     margin-top: 0;
+     margin-right: auto;
+     margin-bottom: 87px;
+     margin-left: auto;
    } 
 
   .top-section__img_teslalogo {
      position: absolute;
      width: 822px;
      height: 271px;
-     top: 252px;
-     left: -27px;
+     top: 230px;
+     left: auto;
+     right: auto;
+     padding-left: 30px;
    }
 
   .top-section__img_car {
-     width: 673px;
+     width: 705px;
      height: 328px;
-     margin: 0 48px 38px 48px;
+     margin-top: 0;
+     margin-right: auto;
+     margin-bottom: 35px;
+     margin-left: auto;
+     padding-left: 50px;
   }
 
   .top-section__characteristic {
      width: 487px;
      height: 193px;
-     margin: 0 140.5px 63.5px 140.5px;
+     margin-top: 0;
+     margin-right: auto;
+     margin-bottom: 63px;
+     margin-left: auto;
      display: block;
    }
 
-   .top-section__img_27 {
+   .top-section__img_27, .top-section__img_27-mob, .top-section__img_632-mob {
+       display: none; 
+   }
+
+   .top-section__img_27-mini {
      width: 487px;
      height: 83px;
-     padding: 0 0 55px 0;
+     padding: 0 0 50px 6px;
    }
 
    .top-section__buttons {
@@ -322,27 +368,46 @@
    .top-section__img_strelka {
     width: 28px;
     height: 14px;
-    margin: 0 0 71px 370px;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 71px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
    }
 
 }
 
-@media (max-device-width: 400px) {
+@media (max-device-width: 450px) {
   
+    .body {
+        font-family: "Montserrat";
+        font-weight: normal;
+        background: #FFFFFF;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
     .top-section {
-        max-width: 375px;
+        max-width: 430px;
+        margin: 0 auto;
     }
 
     .header__menubar {
         width: 352px;
         height: 42px;
-        margin: 5px 0 30px 2px;
+        margin-top: 5px;
+        margin-left: auto; 
+        margin-right: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__logo {
         width: 138px;
         height: 42px;
-        margin-right: 190px;
     }
 
     .header__menu_models, .header__menu_main, .header__link_models, .header__link {
@@ -355,6 +420,12 @@
         padding: 14px 0 13px;
     }
 
+    .burger_icon {
+        width: 24px;
+        height: 15px; 
+        padding: 0;
+    }
+
     .top-section__title {
         color: #000;
         width: 206px;
@@ -363,7 +434,9 @@
         font-style: normal;
         font-weight: 600;
         font-size: 50px;
-        margin: 0 0 0 85px;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 3px;
     }
 
     .top-section__subtitle {
@@ -375,7 +448,11 @@
         font-weight: 500;
         font-size: 10px;
         line-height: 12px;
-        margin: 0 0 49px 108px;
+        text-align: center;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 49px;
     }
 
     .top-section__img_teslalogo {
@@ -388,27 +465,52 @@
     .top-section__img_car {
         width: 357px;
         height: 166px;
-        margin: 0 0 18px 9px; 
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 11px; 
+        padding-left: 49px;
     }
 
     .top-section__characteristic {
         width: 303px;
         height: 136px;
-        margin: 0 0 34px 36px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:34px;
         display: block;
     }
+    
+    .top-section__img_27, .top-section__img_27-mini {
+        display: none;
+    }
 
-    .top-section__img_27 {
-        width: 283px;
-        height: 53px;
-        padding: 0 6px 43px;
+    .top-section_27-mob{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 42px;
+    }
+
+    .top-section__img_27-mob{
+        display: inline;
+        max-width: 127px;
+        max-height: 53px;
+        padding-left: 14px
+    }    
+
+    .top-section__img_632-mob{
+        display: inline;
+        max-width: 115px;
+        max-height: 53px;
+        padding-right: 6px;
     }
 
     .top-section__buttons{
         width: 303px;
         height: 40px;
         display: flex;
-        padding: 0;
+        padding-left: 10px;
         margin: 0;
      }
 
@@ -448,7 +550,10 @@
     .top-section__img_strelka {
         width: 28px;
         height: 14px;
-        margin: 0 0 0 175px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:175px;
   }
 
 
