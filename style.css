@@ -20,10 +20,11 @@
 
     .header__menubar {
       max-width: 1337px;
+      min-width: 1030px;
       max-height: 51px;
       display: grid;
       align-items: center;
-      grid-template-columns: 166px 258px 489px 221px 149px 30px 24px;
+      grid-template-columns: 166px 8fr 489px 7fr 149px 1fr 24px;
       margin-top: 0;
       margin-right: auto;
       margin-left: auto;
@@ -40,7 +41,7 @@
     max-height: 19px;  
     padding: 16px 0 16px;
     display: grid;
-    grid-template-columns: 62px 63px 63px 25px 61px 44px 70px 46px 55px;
+    grid-template-columns: 62px 63fr 63px 25fr 61px 44fr 70px 46fr 55px;
     }
 
     .header__link_models {
@@ -119,7 +120,7 @@
 
     .top-section__img_teslalogo {
     position: absolute;
-    max-width: 1440px;
+    width: 100%;
     left: auto;
     top: 108px;
     right: auto;
@@ -129,12 +130,12 @@
     .top-section__img_car {
     max-width: 968px;
     max-height: 450px; 
+    display: flex;
+    align-items: center;
     padding-right: 60px;
     margin-bottom: 26px; 
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    display: flex;
     }
 
     .top-section__characteristic {
@@ -209,11 +210,13 @@
         font-weight: normal;
         background: #FFFFFF;
         margin: 0 auto;
+        max-width:  1024px;
+        min-width: 500px;
     }
      
 
     .top-section {
-        max-width: 800px;
+        max-width: 1024px;
         margin: 0 auto;
     }
 
@@ -285,22 +288,26 @@
 
   .top-section__img_teslalogo {
      position: absolute;
+     display: flex;
+     align-items: center;
      width: 822px;
      height: 271px;
      top: 230px;
      left: auto;
      right: auto;
-     padding-left: 30px;
+     padding-left: 105px;
    }
 
   .top-section__img_car {
      width: 705px;
      height: 328px;
-     margin-top: 0;
+     margin-top: 0;  
+     display: flex;
      margin-right: auto;
+     align-items: center;
      margin-bottom: 35px;
      margin-left: auto;
-     padding-left: 50px;
+     padding-left: 5px;
   }
 
   .top-section__characteristic {
@@ -379,7 +386,7 @@
 
 }
 
-@media (max-device-width: 450px) {
+@media (max-width: 450px) {
   
     .body {
         font-family: "Montserrat";
@@ -460,6 +467,7 @@
         width: 448px;
         height: 139px;
         top: 156px;
+        padding-left: 0;
     } 
 
     .top-section__img_car {
@@ -470,6 +478,8 @@
         margin-right: auto;
         margin-bottom: 11px; 
         padding-left: 49px;
+        display: flex;
+        align-items: center;
     }
 
     .top-section__characteristic {
