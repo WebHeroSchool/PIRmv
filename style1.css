@@ -1,9 +1,145 @@
 
-.safety-section, .future-section {
+.future-secton, .safety-section {
     display: none;
 }
 
 @media (min-width: 1030px) {
+ /*top-section*/{}
+ /*future-section*/{
+  
+    .future-section { 
+        max-width: 1440px;
+    }
+    
+    .future-section__title {
+        color: #E51937;
+        width: 288px;
+        height: 86px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85px;
+        white-space: pre;
+    }
+
+    .future-section__panelimg {
+     width: 100%;
+    }
+    
+    .redblock {
+        width: 440px;
+        height: 900px;
+        background: #E51937;
+    }
+
+    .redblock__title {
+        color: #FFF;
+        width: 316px;
+        white-space: pre;
+        font-family: Montserrat;        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        padding-top: 51px;
+        padding-left: 52px;
+        padding-right: 72px;
+        margin-bottom: 11px;
+    }
+
+    .redblock__text {
+        color: #FFF;
+        width: 316px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 54px;
+        padding-right: 70px;
+        margin-bottom: 52px;
+    }
+
+    .redblock__img_display {
+        width: 187px;
+        height: 65px;
+        margin-bottom: 35px;
+        padding-left: 48px;
+    }
+
+    .redblock__img_wireless {
+        width: 269px;
+        height: 71px;
+        margin-bottom: 25px;
+        padding-left: 48px;
+    }
+
+    .redblock__img_capacity {
+        width: 202px;
+        height: 71px;
+        margin-bottom: 171px;
+        padding-left: 48px;
+    }
+
+    .redblock__buttons {
+        width: 347px;
+        height: 40px;
+        display: flex;
+        margin-bottom: 63px;
+    }
+  
+    .redblock__infobtn {
+        width: 187px;
+        height: 40px;
+        background-color: #E51937;
+        border: none;
+    }
+
+    .redblock__infoiconbtn {
+        color: #FFF;
+        width: 22px;
+        height: 22px;
+        border: solid 2px #FFF;
+        border-radius: 50%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        white-space: pre;
+    }
+    
+    .redblock__infotextbtn {
+        color: #FFF;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .redblock__order {
+        color: #FFF;
+        width: 160px;
+        height: 40px;
+        border: solid 2px #FFF;
+        color: #FFF;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        white-space: pre;
+        padding-top: 11px;
+    }
+}
+  
+   /*top-section*/{
 
     .body {
         font-family: "Montserrat";
@@ -203,7 +339,7 @@
     display: flex;
     justify-content: space-around;
     }
-
+   }
 
 }
 
@@ -478,7 +614,7 @@
     } 
 
     .top-section__img_car {
-        max-width: 320px;
+        max-width: 357px;
         height: 166px;
         margin-top: 0;
         margin-left: auto;
