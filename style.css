@@ -309,8 +309,7 @@
    }
 
   .top-section__img_car {
-     width: 705px;
-     height: 328px;
+     width: 90%;
      margin-top: 0;  
      display: flex;
      margin-right: auto;
