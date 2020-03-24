@@ -1,9 +1,11 @@
 
-.safety-section, .future-section {
+.safety-section {
     display: none;
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1025px) {
+
+    /*top-section*/
 
     .body {
         font-family: "Montserrat";
@@ -81,7 +83,6 @@
     .header__link_burger {
     max-width: 24px;
     max-height: 15px;
-    /*padding: 18px 0 18px;*/
     }
 
     .top-section__title {
@@ -209,10 +210,168 @@
     justify-content: space-around;
     }
 
-  
+    /*future-section*/
+
+    .future-section { 
+    width: 100%;
+    max-height: 900px;
+    display: grid;
+    grid-template-columns: 368px 1fr 440px;
+
+    }
+
+    .future-section__title {
+        color: #E51937;
+        width: 288px;
+        height: 86px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85px;
+        white-space: pre;
+        position: relative;
+        margin: 0;
+        left: 80px;
+        padding-left: 10px;
+        top: 64px;
+        z-index: 3;
+    }
+
+    .future-section__panel-img {
+        width: 88%;
+        max-width: 1273px;
+        position: absolute;
+        padding-top: 56px;
+        z-index: 1;
+        padding-left: 10px;
+        
+    }
+
+    .redblock {
+        width: 440px;
+        height: 100%;
+        background: #E51937;
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-rows: 305px 1fr 270px 2fr 40px 61px;
+
+    }
+
+    .redblock__title {
+        color: #FFF;
+        width: 316px;
+        white-space: pre;
+        font-family: Montserrat;        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 51px 72px 11px 52px;
+    }
+
+    .redblock__text {
+        color: #FFF;
+        width: 316px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 54px;
+        padding-right: 70px;
+        margin-bottom: 52px;
+    }
+
+    .redblock__img_display {
+        width: 187px;
+        height: 65px;
+        padding-top: 2px;
+        padding-left: 53px; 
+        margin-bottom: 32px;
+    }
+
+    .redblock__img_wireless {
+        width: 269px;
+        height: 71px;
+        margin-bottom: 20px;
+        padding-left: 50px;
+    }
+
+    .redblock__img_capacity {
+        width: 202px;
+        height: 71px;
+        padding-left: 53px;
+        margin-bottom: 166px;
+    }
+
+    .redblock__buttons {
+        width: 440px;
+        height: 40px;
+        display: grid;
+        grid-template-columns: 1fr 187px 160px 3fr;
+        grid-gap: 19px;
+        margin-bottom: 62px;
+    }
+
+    .redblock__infobtn {
+        width: 187px;
+        height: 40px;
+        background-color: #E51937;
+        border: none;
+    }
+
+    .redblock__infobtn-icon {
+        color: #FFF;
+        width: 22px;
+        height: 22px;
+        border: solid 2px #FFF;
+        border-radius: 50%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        padding-left: 7px;
+        padding-right: 6px;
+        margin-right: 7px;
+    }
+
+    .redblock__infobtn-text {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .redblock__order {
+        width: 160px;
+        height: 40px;
+        border: solid 2px #FFF;
+        background-color: #E51937;
+    }
+
+    .redblock__order-text {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
 }
 
 @media (max-width: 1024px) {
+
+    /*top-section*/
 
     .body {
         font-family: "Montserrat";
@@ -222,7 +381,6 @@
         max-width:  1024px;
     }
      
-
     .top-section {
         max-width: 1024px;
         margin: 0 auto;
@@ -393,7 +551,146 @@
     justify-content: space-around;
    }
 
-  
+ /*future-section*/
+
+    .future-section {
+        max-width: 1024px;
+        display: grid;
+        grid-template-rows: 500px 487px;
+    }
+
+    .future-section__title{
+        color: #E51937;
+        width: 93%;
+        height: 86px;
+        position: relative;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85px;
+        white-space: pre;
+        z-index: 3;
+        text-align: end;
+    }
+
+    .future-section__panel-img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    }
+
+    .redblock {
+    width: 100%;
+    background-color: #E51937;
+    position: relative;
+    display: grid;
+    z-index: 2;
+    grid-template-columns: 350px 1fr;
+    }
+
+    .redblock__title {
+        color: #FFF;
+        width: 316px;
+        white-space: pre;
+        font-family: "Montserrat";        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 58px 0 16px 34px;
+    }
+
+    .redblock__text {
+        color: #FFF;
+        width: 316px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 34px;
+    }
+
+    .redblock__img_display {
+        width: 187px;
+        height: 65px;
+        margin: 56px 0 21px 2px;
+        padding-left: 104px;
+    }
+
+    .redblock__img_wireless {
+        width: 269px;
+        height: 71px;
+        margin-bottom: 21px;
+        padding-left: 100px;
+    }
+
+    .redblock__img_capacity {
+        width: 202px;
+        height: 71px;
+        padding-left: 104px;
+    }
+
+    .redblock__buttons {
+        max-width: 1024px;
+        height: 55px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100px 202px 221px 1fr;
+        grid-gap: 36px;
+    }
+
+    .redblock__infobtn {
+        width: 202px;
+        height: 55px;
+        background-color: #E51937;
+        border: none;
+    }
+
+    .redblock__infobtn-icon {
+        color: #FFF;
+        width: 22px;
+        height: 22px;
+        border: solid 2px #FFF;
+        border-radius: 50%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        padding-left: 7px;
+        padding-right: 6px;
+        margin-right: 7px;
+    }
+
+    .redblock__infobtn-text {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .redblock__order {
+        width: 221px;
+        height: 55px;
+        border: solid 2px #FFF;
+        background-color: #E51937;
+    }
+
+    .redblock__order-text {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    } 
 }
 
 @media (max-width: 450px) {
@@ -585,6 +882,13 @@
 
 
 
+
+
+
+}
+
+@media (max-width: 760px) {
+    /*future-section*/
 
 
 
