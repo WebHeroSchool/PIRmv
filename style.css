@@ -1,6 +1,6 @@
 
 
-@media (min-width: 1025px) {
+@media (min-width: 879px) {
 
     /*top-section*/
 
@@ -19,16 +19,16 @@
 
     .header__menubar {
         max-width: 1337px;
-        max-height: 51px;
-        display: grid;
+        max-height: 51px;       
         align-items: center;
-        grid-template-columns: 166px 8fr 489px 7fr 149px 1fr 24px;
         margin-top: 24px;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 58px;
         padding-left: 43px;
         padding-right: 42px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__logo {
@@ -37,11 +37,13 @@
     }
 
     .header__menu_models {
-        max-width: 489px;
+        width: 489px;
         max-height: 19px;  
         padding: 16px 0 16px;
-        display: grid;
-        grid-template-columns: 62px 63fr 63px 25fr 61px 44fr 70px 46fr 55px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header__link_models {
@@ -65,20 +67,28 @@
         font-size: 15px;
         line-height: 18px;
         white-space: pre;
+        cursor: pointer;
+        transition: 2s ease-out;
+    }
 
+    .header__link:hover {
+        color: #E51937;
+        border-bottom: 2px solid #E51937;
+        border-bottom-left-radius: 5px 2px;
+        border-bottom-right-radius: 5px 2px;
     }
 
     .header__menu_main {
-        max-width: 149px;
+        width: 205px;
         max-height: 19px;
-        display: grid;
-        grid-template-columns: 69px 30fr 50px;
-        grid-row: 19px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__link_burger {
         max-width: 24px;
         max-height: 15px;
+        cursor: pointer;
     }
 
     .top-section__title {
@@ -116,28 +126,18 @@
 
     }
 
-    .top-section__img_teslalogo {
-        position: absolute;
+    .top-section__img-teslalogo-car {
+        display: inline;
         max-width: 1440px;
         width: 100%;
-        left: auto;
-        top: 108px;
-        right: auto;
+        margin-left: auto;
+        margin-top: -108px;
+        margin-right: auto;
         padding-left: 5px;
-        z-index: 1;
     }
 
-    .top-section__img_car {
-        max-width: 968px;
-        max-height: 450px;
-        position: relative; 
-        display: flex;
-        align-items: center;
-        padding-right: 60px;
-        margin-bottom: 26px; 
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 2;
+    .top-section__img-teslalogo-car-mid, .top-section__img-teslalogo-car-mini {
+        display: none;
     }
 
     .top-section__characteristic {
@@ -172,22 +172,21 @@
     .top-section__link_testdrive {
         max-width: 118px;
         max-height: 22px;
+        cursor: pointer;
     }
 
-    .top-section__img_testdrive-red{    
+    .top-section__img_testdrive-red {    
       display: none;
     }
 
     .top-section__orderbtn {
-        width: 160px;
-        height: 40px;
+        width: 147px;
+        height: 24px;
         background-color: #FFF;
         border: 2px solid #E51937;
-        margin: 7px 0 11px 0;
-    }
-
-    .top-section__ordertextbtn {
+        cursor: pointer;
         color: #E51937;
+        padding: 11px 6px 5px 7px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: bold;
@@ -195,6 +194,7 @@
         line-height: 16px;
         text-align: center;
         text-transform: uppercase;
+        
     }
 
     .top-section__img_strelka {
@@ -214,14 +214,13 @@
     .future-section { 
         width: 100%;
         height: 900px;
-        display: grid;
-        grid-template-columns: 368px 1fr 440px;
+        display: flex;
     }
 
     .future-section__title {
         color: #E51937;
-        width: 288px;
-        height: 86px;
+        width: 100%;
+        height: 836px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
@@ -230,23 +229,10 @@
         white-space: pre;
         position: relative;
         margin: 0;
-        left: 80px;
-        padding-left: 10px;
+        padding-left: 90px;
         top: 64px;
-        z-index: 3;
-    }
-
-    .future-section__panel-img {
-        position: absolute;
-        width: 88%;
-        max-width: 1273px;
-        height: 844px;
-        padding-top: 56px;
-        z-index: 1;        
-    }
-
-    .future-section__panel-img-mobile {
-        display: none;
+        background: url(pics/panel-desktop.png) no-repeat 0% 100%;
+        background-size: cover;
     }
 
     .redblock {
@@ -255,9 +241,10 @@
         background: #E51937;
         position: relative;
         z-index: 2;
-        display: grid;
-        grid-template-rows: 300px 45px 270px 200px 40px 61px;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
 
     .redblock__title {
         color: #FFF;
@@ -284,35 +271,22 @@
         padding-right: 70px;
     }
 
-    .redblock__img_display {
-        width: 187px;
-        height: 65px;
-        margin-top: 52px;
-        padding-left: 53px; 
-        margin-bottom: 32px;
+    .redblock__right-column{
+        padding-bottom: 60px;
     }
 
-    .redblock__img_wireless {
-        width: 269px;
-        height: 71px;
-        margin-bottom: 20px;
+    .redblock__rc-img{
+        margin-bottom: 30px;
         padding-left: 50px;
     }
 
-    .redblock__img_capacity {
-        width: 202px;
-        height: 71px;
-        padding-left: 53px;
-        margin-bottom: 166px;
-    }
-
     .redblock__buttons {
-        width: 440px;
+        width: 345px;
         height: 40px;
-        display: grid;
-        grid-template-columns: 1fr 187px 160px 3fr;
-        grid-gap: 19px;
-        margin-bottom: 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 50px 62px 45px;
     }
 
     .redblock__infobtn {
@@ -320,21 +294,23 @@
         height: 40px;
         background-color: #E51937;
         border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
     }
 
     .redblock__infobtn-icon {
         color: #FFF;
-        width: 22px;
-        height: 22px;
+        width: 4px;
+        height: 16px;
         border: solid 2px #FFF;
         border-radius: 50%;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: bold;
         font-size: 13px;
         line-height: 16px;
-        padding-left: 7px;
-        padding-right: 6px;
+        padding:3px 9px 1px 9px;
         margin-right: 7px;
     }
 
@@ -353,16 +329,16 @@
         height: 40px;
         border: solid 2px #FFF;
         background-color: #E51937;
-    }
-
-    .redblock__order-text {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #FFF;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: bold;
         font-size: 13px;
         line-height: 16px;
-        text-align: center;
         text-transform: uppercase;
     }
 
@@ -398,6 +374,13 @@
         opacity: 0.7;
     }
 
+    .redblock__stars {
+        color: #fff;
+        font-size: 25px;
+        height: 25px;
+        width: 140px;
+    }
+
     .redblock__left-column, .redblock__right-column {
         width: 440px;
     }
@@ -406,12 +389,15 @@
         width: 295px;
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         margin-left: 56px;
         margin-top: 16px;
     }
 
     .redblock__fivestar {
-        margin: 67px 0 30px 64px;
+        padding: 0 0 50px 66px;
+        width: 280px;
+        height: 92px;
     }
 
     .safety-section__carframe {
@@ -419,35 +405,24 @@
         height: 900px;
     }
 
-    .safety-section__models-logo {
-        color: #E51937;
-        position: absolute;
-        z-index: 1;   
-        padding-top: 97px;
-        width: 65%;
-        max-width: 1000px;
-        height: 269px;
-        text-align: right;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 200px;
-        line-height: 244px;
-        opacity: 0.1;
-    }
-
     .safety-section__carframe-img {
         position: relative;
+        margin: 15% 0 0 -45px;
         z-index: 2;
-        margin: 150px 0 0 -45px;
         width: 100%;
+        background: url(pics/model_s.png) no-repeat top right;
+        background-size: 80%;
+    }
+
+    .safety-section__carframe-img-mid, .safety-section__carframe-img-mini {
+        display: none;
     }
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 878px) {
 
-    /*top-section 1024*/
+    /*top-section 880*/
 
     .body {
         font-family: "Montserrat";
@@ -463,114 +438,108 @@
     }
 
    .header__menubar {
-      max-width: 980px;
-      height: 51px;
-      margin-top: 24px;
-      margin-right: auto;
-      margin-bottom: 80px;
-      margin-left: auto;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 15px;
-      padding-right: 33px;
+        max-width: 980px;
+        height: 51px;
+        margin-top: 24px;
+        margin-right: auto;
+        margin-bottom: 80px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 33px;
     }
 
  .header__logo{
-     width: 166px;
-     height: 51px;
+        width: 166px;
+        height: 51px;
     }
 
-  .header__menu_models, .header__menu_main, .header__link_models, .header__link {
-     display: none;
+  .header__menu_models, .header__link_models, .header__link {
+        display: none;
     }
 
+  .header__menu_main {
+        width: 35px;   
+    }
   .header__link_burger {
-     width: 35px;
-     height: 22px;
-     padding: 14.5px 0 14.5px;
-    }
+        width: 35px;
+        height: 22px;
+        padding: 14.5px 0 14.5px;
+        }
 
    .burger_icon {
-    width: 35px;
-    height: 22px; 
-    padding: 0; 
+        width: 35px;
+        height: 22px; 
+        padding: 0; 
    }
 
   .top-section__title {
-     color: #000;
-     width: 370px;
-     height: 110px;
-     text-align: center;
-     margin-top: 0;
-     margin-right: auto;
-     margin-bottom: -10px;
-     margin-left: auto;
-     white-space: pre;
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: 600;
-     font-size: 90px;
-     padding-right: 30px;
+        color: #000;
+        width: 370px;
+        height: 110px;
+        text-align: center;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: -10px;
+        margin-left: auto;
+        white-space: pre;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 90px;
+        padding-right: 30px;
     }
 
   .top-section__subtitle {
-     color: #000;  
-     width: 241px;
-     height: 19px;
-     white-space: pre;
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: 500;
-     font-size: 15px;
-     line-height: 18px;
-     text-align: center;
-     margin-top: 0;
-     margin-right: auto;
-     margin-bottom: 87px;
-     margin-left: auto;
+        color: #000;  
+        width: 241px;
+        height: 19px;
+        white-space: pre;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
    } 
 
-  .top-section__img_teslalogo {
-     position: absolute;
-     display: flex;
-     align-items: center;
-     width: 100%;
-     height: 271px;
-     top: 230px;
-     left: auto;
-     right: auto;
-     padding-left: 0;
+  .top-section__img-teslalogo-car, .top-section__img-teslalogo-car-mini {
+        display: none;
+  }
+  
+  .top-section__img-teslalogo-car-mid {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 822px;
+        max-height: 440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
    }
 
-  .top-section__img_car {
-     width: 90%;
-     margin-top: 0;  
-     display: flex;
-     margin-right: auto;
-     align-items: center;
-     margin-bottom: 35px;
-     margin-left: auto;
-     padding-left: 5px;
-  }
-
   .top-section__characteristic {
-     width: 487px;
-     height: 193px;
-     margin-top: 0;
-     margin-right: auto;
-     margin-bottom: 63px;
-     margin-left: auto;
-     display: block;
+        width: 487px;
+        height: 193px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 63px;
+        margin-left: auto;
+        display: block;
    }
 
    .top-section__img_27, .top-section__img_27-mob, .top-section__img_632-mob {
-       display: none; 
+        display: none; 
    }
 
    .top-section__img_27-mini {
-     width: 487px;
-     height: 83px;
-     padding: 0 0 50px 6px;
+        width: 487px;
+        height: 83px;
+        padding: 0 0 50px 6px;
    }
 
    .top-section__buttons {
@@ -581,64 +550,61 @@
    }
 
   .top-section__link_testdrive {
-      width: 197px;
-      height: 55px;
-      padding: 0;
-      margin: 0;
-  }
+        width: 197px;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
 
   .top-section__img_testdrive-red {
-      display: inline;
+       display: inline;
   }
 
   .top-section__img_testdrive { 
-      display: none;
+       display: none;
    }
   
   .top-section__orderbtn {
-     background: #E51937;
-     width: 221px;
-     height: 55px;
-     margin: 0;
-   }
-
-   .top-section__ordertextbtn {
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: bold;
-     font-size: 16px;
-     line-height: 20px;
-     color: #FFF;
-     align-items: center;
-     text-align: center;
-     text-transform: uppercase;
-     
+        background: #E51937;
+        width: 221px;
+        height: 55px;
+        margin: 0;
+        cursor: pointer;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
    }
 
    .top-section__img_strelka {
-    width: 28px;
-    height: 14px;
-    padding-left: 15px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-bottom: 71px;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
+        width: 28px;
+        height: 14px;
+        padding-left: 15px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-bottom: 71px;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
    }
 
- /*future-section 1024*/
+ /*future-section 880*/
 
     .future-section {
         max-width: 1024px;
-        display: grid;
-        grid-template-rows: 500px 487px;
     }
 
     .future-section__title{
         color: #E51937;
-        width: 93%;
-        height: 86px;
+        padding-right: 7%;
+        height: 500px;
         position: relative;
         font-family: "Montserrat";
         font-style: normal;
@@ -646,24 +612,26 @@
         font-size: 70px;
         line-height: 85px;
         white-space: pre;
-        z-index: 3;
         text-align: end;
-    }
-
-    .future-section__panel-img {
-    width: 100%;
-    position: absolute;
-    z-index: 1;
+        background: url(pics/panel-mid.png) no-repeat 0% 0%;
+        background-size: cover;
+        margin: 0;
     }
 
     .redblock {
-    width: 100%;
-    background-color: #E51937;
-    position: relative;
-    display: grid;
-    z-index: 2;
-    order: 2;
-    grid-template-columns: 320px 100px 280px;
+        width: 100%;
+        max-width: 878px;
+        max-height: 490px;
+        background-color: #E51937;
+        position: relative;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .redblock__info{
+        display: flex;
+        justify-content: space-around;
+        height: 320px;
     }
 
     .redblock__title {
@@ -675,7 +643,7 @@
         font-weight: 600;
         font-size: 30px;
         line-height: 37px;
-        margin: 58px 0 16px 34px;
+        margin: 0;
     }
 
     .redblock__text {
@@ -686,70 +654,60 @@
         font-weight: 500;
         font-size: 15px;
         line-height: 18px;
-        padding-left: 34px;
     }
 
     .redblock__left-column {
         max-width: 320px;
-        margin-left: 10%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 55px;
+        padding-left: 34px;
     }
 
     .redblock__right-column{
-        max-width: 280px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0;
+        padding-top: 55px;
     }
 
-    .redblock__fivestar, .space1, .space2, .future-section__panel-img-mobile {
+    .redblock__fivestar, .future-section__panel-img-mobile {
         display: none;
     }
     
-    .redblock__img_display {
-        width: 187px;
-        height: 65px;
-        margin: 56px 0 21px 2px;
-        padding-left: 104px;
-    }
-
-    .redblock__img_wireless {
-        width: 269px;
-        height: 71px;
-        margin-bottom: 21px;
-        padding-left: 100px;
-    }
-
-    .redblock__img_capacity {
-        width: 202px;
-        height: 71px;
-        padding-left: 104px;
-    }
-
     .redblock__buttons {
-        max-width: 1024px;
-        height: 55px;
-        display: grid;
-        grid-template-columns: 120px 202px 221px 1fr;
-        grid-gap: 36px;
+        height: 167px;
+        margin: 0 100px 0 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .redblock__infobtn {
         width: 202px;
         height: 55px;
         background-color: #E51937;
-        border: none;
+        padding-top: 33px;
     }
 
     .redblock__infobtn-icon {
         color: #FFF;
-        width: 22px;
-        height: 22px;
+        width: 4px;
+        height: 16px;
         border: solid 2px #FFF;
         border-radius: 50%;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: bold;
         font-size: 13px;
         line-height: 16px;
-        padding-left: 7px;
-        padding-right: 6px;
+        padding: 3px 9px 2px 8px;
         margin-right: 7px;
     }
 
@@ -768,26 +726,25 @@
         height: 55px;
         border: solid 2px #FFF;
         background-color: #E51937;
-    }
-
-    .redblock__order-text {
         color: #FFF;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
-        text-align: center;
         text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     } 
 
-    /*safety-section 1024*/
+    /*safety-section 880*/
 
     .safety-section {
         max-width: 1024px;
         width: 100%;
-        display: grid;
-        grid-template-rows: 540px 487px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .redblock__caption {
@@ -813,16 +770,18 @@
         opacity: 0.7;
     }
 
-    .redblock__left-column, .redblock__right-column {
-        width: 440px;
-    }
-
     .redblock__protection {
         width: 295px;
         display: flex;
         justify-content: space-between;
-        margin-left: 56px;
-        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .redblock__stars {
+        color: #fff;
+        font-size: 25px;
+        height: 25px;
+        width: 140px;
     }
 
     .redblock__fivestar {
@@ -831,30 +790,15 @@
 
     .safety-section__carframe {
         max-width: 1000px;
-        height: 900px;
-        display: grid;
-        order: 1;
+        max-height: 900px;
     }
 
-    .safety-section__models-logo {
-        color: #E51937;
-        position: absolute;
-        z-index: 1;   
-        padding-top: 97px;
-        width: 670px;
-        left: 80px;
-        height: 269px;
-        text-align: right;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 148px;
-        line-height: 180px;
-        opacity: 0.1;
-        white-space: pre;
+    .safety-section__carframe-img, .safety-section__carframe-img-mini {
+        display: none;
     }
-
-    .safety-section__carframe-img {
+    
+    .safety-section__carframe-img-mid {
+        display: inline;
         position: relative;
         z-index: 2;
         margin-top: 115px;
@@ -863,13 +807,22 @@
         display: flex;
         align-items: center;
         max-width: 750px;
+        margin: 0;
     }
 
 
-}
+} 
 
+@media (max-width: 710px) {
 
-@media (max-width: 750px) {
+    .top-section__img-teslalogo-car, .top-section__img-teslalogo-car-mid {
+        display: none;
+    }
+     
+    .top-section__img-teslalogo-car-mini{
+        display: inline;
+        width: 100%;
+    }
 
     .top-section__img_strelka{
         margin-bottom: 0;
@@ -878,40 +831,29 @@
     .body {
         min-width: 320px;
     }
-
+    
     /*future-section mobilе*/
 
     .future-section {
-        max-width: 750px;
-        max-height: 700px;
         min-width: 320px;
-        display: grid;
-        grid-template-rows: 300fr 304fr;
+        display: flex;
+        flex-direction: column;
     }
     
-    .space1 {
+
+    .future-section__title {
+        background: url(pics/panel-mid.png) no-repeat 0% 0%;
+        background-size: cover;
+        margin: 0;
+        font-size: 0;
+    }
+    
+    .future-section__panel-mid {
         display: inline;
-        white-space: pre;
-        max-height: 400px;
-    }
-
-    .space2, .space3, .redblock__fivestar, .future-section__title {
-        display: none;
-    }
-
-    .redblock__buttons, .redblock__right-column, .redblock__img_display, .redblock__img_wireless, .redblock__img_capacity {
-        display: none;
-    }
-
-    .future-section__panel-img-mobile {
         width: 100%;
-        min-width: 320px;
-        height: 300px;
-        position: absolute;
-        display: inline;
     }
 
-    .future-section__panel-img {
+    .redblock__buttons, .redblock__fivestar, .redblock__right-column {
         display: none;
     }
 
@@ -919,15 +861,18 @@
         width: 100%;
         min-width: 316px;
         display: block;
-        height: 304px;
-        order: 2;
+        max-height: 500px;
+        min-height: 350px;
     }
     
     .redblock__left-column{
-        display: grid;
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
         margin: 0 auto;
         width: 320px;
+        height: 300px;
+        margin-bottom: 50px;
     }
 
 
@@ -940,10 +885,7 @@
         font-weight: 600;
         font-size: 30px;
         line-height: 37px;
-        margin-top: 18px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 9px;
+        margin: 0 0 9px 0;
     }
 
     .redblock__text {
@@ -954,47 +896,44 @@
         font-size: 15px;
         line-height: 18px;
         text-align: left;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0;
+        margin: 0 0 35px 0;
+        padding: 0;
     }
 
     /* safety-section mobilе*/
 
     .safety-section {
-        max-width: 750px;
-        max-height: 700px;
-        display: grid;
-        grid-template-rows: 30fr 304fr;
-        min-width: 320px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .safety-section__carframe {
-        order: 1;
         max-height: 500px;
         height: 100%;
         width: 100%;
     }
 
-    .safety-section__models-logo{
-        width: 80%;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 100px;
-        line-height: 122px;
-        color: #E51937;
-        opacity: 0.1;
-        left: 0;
+    .safety-section__carframe-img, .safety-section__carframe-img-mid {
+        display: none; 
     }
 
-    .safety-section__carframe-img{
-        width: 92%;
-        display: grid;
-        order: 2;
-        align-items: center;
+    .safety-section__carframe-img-mini {
+        display: block;
+        width: 100%;
     }
 
+}
+
+@media (max-width: 620px) {
+    .future-section__title {
+        background: url(pics/panel-mini.png) no-repeat 0% 0%;
+        background-size: cover;
+        margin: 0;
+        height: 375px;
+        max-width: 620px;
+        color: #FFF;
+        font-size: 1px;
+    } 
 }
 
 @media (max-width: 450px) {
@@ -1176,17 +1115,7 @@
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom:175px;
+        margin-bottom: 30px;
   }
-
-    .safety-section__models-logo {
-        width: 100%;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 65px;
-        line-height: 60px;
-        max-width: 450px; 
-        padding-top: 55px;
-    }
+ 
 }
