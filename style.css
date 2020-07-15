@@ -133,7 +133,6 @@
         margin-left: auto;
         margin-top: -108px;
         margin-right: auto;
-        padding-left: 5px;
     }
 
     .top-section__img-teslalogo-car-mid, .top-section__img-teslalogo-car-mini {
@@ -525,10 +524,7 @@
   .top-section__characteristic {
         width: 487px;
         height: 193px;
-        margin-top: 0;
-        margin-right: auto;
-        margin-bottom: 63px;
-        margin-left: auto;
+        margin: 0 auto 63px auto;
         display: block;
    }
 
@@ -596,10 +592,6 @@
    }
 
  /*future-section 880*/
-
-    .future-section {
-        max-width: 1024px;
-    }
 
     .future-section__title{
         color: #E51937;
@@ -801,12 +793,9 @@
         display: inline;
         position: relative;
         z-index: 2;
-        margin-top: 115px;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         align-items: center;
-        max-width: 750px;
+        width: 100%;
         margin: 0;
     }
 
@@ -1014,25 +1003,15 @@
         margin-bottom: 49px;
     }
 
-    .top-section__img_teslalogo {
+ /*   .top-section__img-teslalogo-car-mini {
         position: absolute;
         width: 100%;
         height: 139px;
         top: 156px;
         padding-left: 0;
     } 
-
-    .top-section__img_car {
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 11px; 
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-    }
+*/
+   
 
     .top-section__characteristic {
         width: 303px;
