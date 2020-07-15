@@ -1,9 +1,8 @@
 
-.safety-section, .future-section {
-    display: none;
-}
 
-@media (min-width: 1030px) {
+@media (min-width: 879px) {
+
+    /*top-section*/
 
     .body {
         font-family: "Montserrat";
@@ -14,147 +13,147 @@
     }
     
     .top-section {
-     max-width: 1440px;
-     margin: 0;
+        max-width: 1440px;
+        margin: 0;
     }
 
     .header__menubar {
-      max-width: 1337px;
-      min-width: 1030px;
-      max-height: 51px;
-      display: grid;
-      align-items: center;
-      grid-template-columns: 166px 8fr 489px 7fr 149px 1fr 24px;
-      margin-top: 24px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 58px;
-      padding-left: 43px;
-      padding-right: 42px;
+        max-width: 1337px;
+        max-height: 51px;       
+        align-items: center;
+        margin-top: 24px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 58px;
+        padding-left: 43px;
+        padding-right: 42px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__logo {
-    max-width: 166px;
-    max-height: 51px;
+        max-width: 166px;
+        max-height: 51px;
     }
 
     .header__menu_models {
-    max-width: 489px;
-    max-height: 19px;  
-    padding: 16px 0 16px;
-    display: grid;
-    grid-template-columns: 62px 63fr 63px 25fr 61px 44fr 70px 46fr 55px;
+        width: 489px;
+        max-height: 19px;  
+        padding: 16px 0 16px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header__link_models {
-    color: #E51937;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    height: 25px;
-    border-bottom: 2px solid #E51937;
-    border-bottom-left-radius: 5px 2px;
-    border-bottom-right-radius: 5px 2px;
-    white-space: pre;
+        color: #E51937;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        height: 25px;
+        border-bottom: 2px solid #E51937;
+        border-bottom-left-radius: 5px 2px;
+        border-bottom-right-radius: 5px 2px;
+        white-space: pre;
     }
 
     .header__link{
-    color: #000000;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    white-space: pre;
+        color: #000000;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        white-space: pre;
+        cursor: pointer;
+        transition: 2s ease-out;
+    }
 
+    .header__link:hover {
+        color: #E51937;
+        border-bottom: 2px solid #E51937;
+        border-bottom-left-radius: 5px 2px;
+        border-bottom-right-radius: 5px 2px;
     }
 
     .header__menu_main {
-    max-width: 149px;
-    max-height: 19px;
-    display: grid;
-    grid-template-columns: 69px 30fr 50px;
-    grid-row: 19px;
+        width: 205px;
+        max-height: 19px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__link_burger {
-    max-width: 24px;
-    max-height: 15px;
-    /*padding: 18px 0 18px;*/
+        max-width: 24px;
+        max-height: 15px;
+        cursor: pointer;
     }
 
     .top-section__title {
-    color: #000;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 90px;
-    margin-left: auto;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: -9px;
-    max-width: 370px;
-    max-height: 110px;
-    white-space: pre;
-    text-align: center;  
-    display: flex;
-    justify-content: space-around;
+        color: #000;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 90px;
+        margin-left: auto;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: -9px;
+        max-width: 370px;
+        max-height: 110px;
+        white-space: pre;
+        text-align: center;  
+        display: flex;
+        justify-content: space-around;
     }
 
     .top-section__subtitle {
-    color: #000;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    bottom: 26px;
-    margin-top: 0;
-    white-space: pre;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 26px;
-    text-align: center;
+        color: #000;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        bottom: 26px;
+        margin-top: 0;
+        white-space: pre;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 26px;
+        text-align: center;
 
     }
 
-    .top-section__img_teslalogo {
-    position: absolute;
-    max-width: 1440px;
-    width: 100%;
-    left: auto;
-    top: 108px;
-    right: auto;
-    padding-left: 5px;
+    .top-section__img-teslalogo-car {
+        display: inline;
+        max-width: 1440px;
+        width: 100%;
+        margin-left: auto;
+        margin-top: -108px;
+        margin-right: auto;
     }
 
-    .top-section__img_car {
-    max-width: 968px;
-    max-height: 450px; 
-    display: flex;
-    align-items: center;
-    padding-right: 60px;
-    margin-bottom: 26px; 
-    margin-left: auto;
-    margin-right: auto;
+    .top-section__img-teslalogo-car-mid, .top-section__img-teslalogo-car-mini {
+        display: none;
     }
 
     .top-section__characteristic {
-    max-width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 28px;
-    padding-left: 14px;
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 28px;
+        padding-left: 14px;
     }
  
     .top-section__img_27 {
-    width: 372px;
-    height: 65px;
+        width: 372px;
+        height: 65px;
     }
 
     .top-section__img_27-mini, .top-section__img_27-mob, .top-section__img_632-mob {
@@ -162,57 +161,267 @@
     }
 
     .top-section__buttons {
-    width: 320px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        width: 320px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .top-section__link_testdrive {
-    max-width: 118px;
-    max-height: 22px;
+        max-width: 118px;
+        max-height: 22px;
+        cursor: pointer;
     }
 
-    .top-section__img_testdrive-red{
-    display: none;
+    .top-section__img_testdrive-red {    
+      display: none;
     }
 
     .top-section__orderbtn {
-    width: 160px;
-    height: 40px;
-    background-color: #FFF;
-    border: 2px solid #E51937;
-    margin: 7px 0 11px 0;
-    }
-
-    .top-section__ordertextbtn {
-    color: #E51937;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
-    text-transform: uppercase;
+        width: 147px;
+        height: 24px;
+        background-color: #FFF;
+        border: 2px solid #E51937;
+        cursor: pointer;
+        color: #E51937;
+        padding: 11px 6px 5px 7px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        
     }
 
     .top-section__img_strelka {
-    width: 34px;
-    height: 20px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 34px;
-    padding-left: 18px;
-    display: flex;
-    justify-content: space-around;
+        width: 34px;
+        height: 20px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 34px;
+        padding-left: 18px;
+        display: flex;
+        justify-content: space-around;
     }
 
-  
+    /*future-section*/
+
+    .future-section { 
+        width: 100%;
+        height: 900px;
+        display: flex;
+    }
+
+    .future-section__title {
+        color: #E51937;
+        width: 100%;
+        height: 836px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85px;
+        white-space: pre;
+        position: relative;
+        margin: 0;
+        padding-left: 90px;
+        top: 64px;
+        background: url(pics/panel-desktop.png) no-repeat 0% 100%;
+        background-size: cover;
+    }
+
+    .redblock {
+        width: 440px;
+        height: 900px;
+        background: #E51937;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+    .redblock__title {
+        color: #FFF;
+        width: 316px;
+        font-family: "Montserrat";        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 51px 72px 11px 52px;
+        white-space: pre;
+        text-align: left;
+    }
+
+    .redblock__text {
+        color: #FFF;
+        width: 316px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 54px;
+        padding-right: 70px;
+    }
+
+    .redblock__right-column{
+        padding-bottom: 60px;
+    }
+
+    .redblock__rc-img{
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+
+    .redblock__buttons {
+        width: 345px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 50px 62px 45px;
+    }
+
+    .redblock__infobtn {
+        width: 187px;
+        height: 40px;
+        background-color: #E51937;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .redblock__infobtn-icon {
+        color: #FFF;
+        width: 4px;
+        height: 16px;
+        border: solid 2px #FFF;
+        border-radius: 50%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        padding:3px 9px 1px 9px;
+        margin-right: 7px;
+    }
+
+    .redblock__infobtn-text {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .redblock__order {
+        width: 160px;
+        height: 40px;
+        border: solid 2px #FFF;
+        background-color: #E51937;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    /*safety-section*/
+    
+    .safety-section {
+        max-width: 1440px;
+        height: 900px;
+        display: grid;
+        grid-template-columns: 440px 1fr;
+    }
+
+    .redblock__caption {
+        color: #fff;
+        max-width: 110px;
+        height: 21px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .redblock__desc {
+        color: #fff;
+        width: 53px;
+        height: 13px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        opacity: 0.7;
+    }
+
+    .redblock__stars {
+        color: #fff;
+        font-size: 25px;
+        height: 25px;
+        width: 140px;
+    }
+
+    .redblock__left-column, .redblock__right-column {
+        width: 440px;
+    }
+
+    .redblock__protection {
+        width: 295px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-left: 56px;
+        margin-top: 16px;
+    }
+
+    .redblock__fivestar {
+        padding: 0 0 50px 66px;
+        width: 280px;
+        height: 92px;
+    }
+
+    .safety-section__carframe {
+        max-width: 1000px;
+        height: 900px;
+    }
+
+    .safety-section__carframe-img {
+        position: relative;
+        margin: 15% 0 0 -45px;
+        z-index: 2;
+        width: 100%;
+        background: url(pics/model_s.png) no-repeat top right;
+        background-size: 80%;
+    }
+
+    .safety-section__carframe-img-mid, .safety-section__carframe-img-mini {
+        display: none;
+    }
+
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 878px) {
+
+    /*top-section 880*/
 
     .body {
         font-family: "Montserrat";
@@ -222,121 +431,111 @@
         max-width:  1024px;
     }
      
-
     .top-section {
         max-width: 1024px;
         margin: 0 auto;
     }
 
    .header__menubar {
-      max-width: 980px;
-      height: 51px;
-      margin-top: 24px;
-      margin-right: auto;
-      margin-bottom: 80px;
-      margin-left: auto;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 15px;
-      padding-right: 33px;
+        max-width: 980px;
+        height: 51px;
+        margin-top: 24px;
+        margin-right: auto;
+        margin-bottom: 80px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 33px;
     }
 
  .header__logo{
-     width: 166px;
-     height: 51px;
+        width: 166px;
+        height: 51px;
     }
 
-  .header__menu_models, .header__menu_main, .header__link_models, .header__link {
-     display: none;
+  .header__menu_models, .header__link_models, .header__link {
+        display: none;
     }
 
+  .header__menu_main {
+        width: 35px;   
+    }
   .header__link_burger {
-     width: 35px;
-     height: 22px;
-     padding: 14.5px 0 14.5px;
-    }
+        width: 35px;
+        height: 22px;
+        padding: 14.5px 0 14.5px;
+        }
 
    .burger_icon {
-    width: 35px;
-    height: 22px; 
-    padding: 0; 
+        width: 35px;
+        height: 22px; 
+        padding: 0; 
    }
 
   .top-section__title {
-     color: #000;
-     width: 370px;
-     height: 110px;
-     text-align: center;
-     margin-top: 0;
-     margin-right: auto;
-     margin-bottom: -10px;
-     margin-left: auto;
-     white-space: pre;
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: 600;
-     font-size: 90px;
-     padding-right: 30px;
+        color: #000;
+        width: 370px;
+        height: 110px;
+        text-align: center;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: -10px;
+        margin-left: auto;
+        white-space: pre;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 90px;
+        padding-right: 30px;
     }
 
   .top-section__subtitle {
-     color: #000;  
-     width: 241px;
-     height: 19px;
-     white-space: pre;
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: 500;
-     font-size: 15px;
-     line-height: 18px;
-     text-align: center;
-     margin-top: 0;
-     margin-right: auto;
-     margin-bottom: 87px;
-     margin-left: auto;
+        color: #000;  
+        width: 241px;
+        height: 19px;
+        white-space: pre;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
    } 
 
-  .top-section__img_teslalogo {
-     position: absolute;
-     display: flex;
-     align-items: center;
-     width: 100%;
-     height: 271px;
-     top: 230px;
-     left: auto;
-     right: auto;
-     padding-left: 0;
+  .top-section__img-teslalogo-car, .top-section__img-teslalogo-car-mini {
+        display: none;
+  }
+  
+  .top-section__img-teslalogo-car-mid {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 822px;
+        max-height: 440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
    }
 
-  .top-section__img_car {
-     width: 90%;
-     margin-top: 0;  
-     display: flex;
-     margin-right: auto;
-     align-items: center;
-     margin-bottom: 35px;
-     margin-left: auto;
-     padding-left: 5px;
-  }
-
   .top-section__characteristic {
-     width: 487px;
-     height: 193px;
-     margin-top: 0;
-     margin-right: auto;
-     margin-bottom: 63px;
-     margin-left: auto;
-     display: block;
+        width: 487px;
+        height: 193px;
+        margin: 0 auto 63px auto;
+        display: block;
    }
 
    .top-section__img_27, .top-section__img_27-mob, .top-section__img_632-mob {
-       display: none; 
+        display: none; 
    }
 
    .top-section__img_27-mini {
-     width: 487px;
-     height: 83px;
-     padding: 0 0 50px 6px;
+        width: 487px;
+        height: 83px;
+        padding: 0 0 50px 6px;
    }
 
    .top-section__buttons {
@@ -347,53 +546,383 @@
    }
 
   .top-section__link_testdrive {
-      width: 197px;
-      height: 55px;
-      padding: 0;
-      margin: 0;
-  }
+        width: 197px;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
 
   .top-section__img_testdrive-red {
-      display: inline;
+       display: inline;
   }
 
   .top-section__img_testdrive { 
-      display: none;
+       display: none;
    }
   
   .top-section__orderbtn {
-     background: #E51937;
-     width: 221px;
-     height: 55px;
-     margin: 0;
-   }
-
-   .top-section__ordertextbtn {
-     font-family: "Montserrat";
-     font-style: normal;
-     font-weight: bold;
-     font-size: 16px;
-     line-height: 20px;
-     color: #FFF;
-     align-items: center;
-     text-align: center;
-     text-transform: uppercase;
-     
+        background: #E51937;
+        width: 221px;
+        height: 55px;
+        margin: 0;
+        cursor: pointer;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
    }
 
    .top-section__img_strelka {
-    width: 28px;
-    height: 14px;
-    padding-left: 15px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-bottom: 71px;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
+        width: 28px;
+        height: 14px;
+        padding-left: 15px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-bottom: 71px;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
    }
 
-  
+ /*future-section 880*/
+
+    .future-section__title{
+        color: #E51937;
+        padding-right: 7%;
+        height: 500px;
+        position: relative;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85px;
+        white-space: pre;
+        text-align: end;
+        background: url(pics/panel-mid.png) no-repeat 0% 0%;
+        background-size: cover;
+        margin: 0;
+    }
+
+    .redblock {
+        width: 100%;
+        max-width: 878px;
+        max-height: 490px;
+        background-color: #E51937;
+        position: relative;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .redblock__info{
+        display: flex;
+        justify-content: space-around;
+        height: 320px;
+    }
+
+    .redblock__title {
+        color: #FFF;
+        width: 316px;
+        white-space: pre;
+        font-family: "Montserrat";        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0;
+    }
+
+    .redblock__text {
+        color: #FFF;
+        width: 316px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .redblock__left-column {
+        max-width: 320px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 55px;
+        padding-left: 34px;
+    }
+
+    .redblock__right-column{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0;
+        padding-top: 55px;
+    }
+
+    .redblock__fivestar, .future-section__panel-img-mobile {
+        display: none;
+    }
+    
+    .redblock__buttons {
+        height: 167px;
+        margin: 0 100px 0 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .redblock__infobtn {
+        width: 202px;
+        height: 55px;
+        background-color: #E51937;
+        padding-top: 33px;
+    }
+
+    .redblock__infobtn-icon {
+        color: #FFF;
+        width: 4px;
+        height: 16px;
+        border: solid 2px #FFF;
+        border-radius: 50%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 3px 9px 2px 8px;
+        margin-right: 7px;
+    }
+
+    .redblock__infobtn-text {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .redblock__order {
+        width: 221px;
+        height: 55px;
+        border: solid 2px #FFF;
+        background-color: #E51937;
+        color: #FFF;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    /*safety-section 880*/
+
+    .safety-section {
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .redblock__caption {
+        color: #fff;
+        max-width: 110px;
+        height: 21px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .redblock__desc {
+        color: #fff;
+        width: 53px;
+        height: 13px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        opacity: 0.7;
+    }
+
+    .redblock__protection {
+        width: 295px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    .redblock__stars {
+        color: #fff;
+        font-size: 25px;
+        height: 25px;
+        width: 140px;
+    }
+
+    .redblock__fivestar {
+        display: none;
+    }
+
+    .safety-section__carframe {
+        max-width: 1000px;
+        max-height: 900px;
+    }
+
+    .safety-section__carframe-img, .safety-section__carframe-img-mini {
+        display: none;
+    }
+    
+    .safety-section__carframe-img-mid {
+        display: inline;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+
+} 
+
+@media (max-width: 710px) {
+
+    .top-section__img-teslalogo-car, .top-section__img-teslalogo-car-mid {
+        display: none;
+    }
+     
+    .top-section__img-teslalogo-car-mini{
+        display: inline;
+        width: 100%;
+    }
+
+    .top-section__img_strelka{
+        margin-bottom: 0;
+    }
+
+    .body {
+        min-width: 320px;
+    }
+    
+    /*future-section mobilе*/
+
+    .future-section {
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .future-section__title {
+        background: url(pics/panel-mid.png) no-repeat 0% 0%;
+        background-size: cover;
+        margin: 0;
+        font-size: 0;
+    }
+    
+    .future-section__panel-mid {
+        display: inline;
+        width: 100%;
+    }
+
+    .redblock__buttons, .redblock__fivestar, .redblock__right-column {
+        display: none;
+    }
+
+    .redblock {
+        width: 100%;
+        min-width: 316px;
+        display: block;
+        max-height: 500px;
+        min-height: 350px;
+    }
+    
+    .redblock__left-column{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        width: 320px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+
+    .redblock__title {
+        max-width: 316px;
+        min-width: 250px;
+        text-align: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0 0 9px 0;
+    }
+
+    .redblock__text {
+        max-width: 316px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: left;
+        margin: 0 0 35px 0;
+        padding: 0;
+    }
+
+    /* safety-section mobilе*/
+
+    .safety-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .safety-section__carframe {
+        max-height: 500px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .safety-section__carframe-img, .safety-section__carframe-img-mid {
+        display: none; 
+    }
+
+    .safety-section__carframe-img-mini {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .future-section__title {
+        background: url(pics/panel-mini.png) no-repeat 0% 0%;
+        background-size: cover;
+        margin: 0;
+        height: 375px;
+        max-width: 620px;
+        color: #FFF;
+        font-size: 1px;
+    } 
 }
 
 @media (max-width: 450px) {
@@ -474,25 +1003,15 @@
         margin-bottom: 49px;
     }
 
-    .top-section__img_teslalogo {
+ /*   .top-section__img-teslalogo-car-mini {
         position: absolute;
         width: 100%;
         height: 139px;
         top: 156px;
         padding-left: 0;
     } 
-
-    .top-section__img_car {
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 11px; 
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-    }
+*/
+   
 
     .top-section__characteristic {
         width: 303px;
@@ -575,17 +1094,7 @@
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom:175px;
+        margin-bottom: 30px;
   }
-
-
-
-
-
-
-
-
-
-
-
+ 
 }
